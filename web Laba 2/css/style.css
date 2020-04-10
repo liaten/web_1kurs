@@ -1,0 +1,116 @@
+body
+{
+    background-image: url("../img/escheresque_ste.png");
+    font-family: Verdana;
+    line-height: 150%; /*интерлиньяж*/
+}
+.dws-menu
+{
+    background-color: white;
+    /*margin-top: 100px;*/
+    width: 100%;
+}
+ul.dws-ul
+{
+    display: flex;
+    padding: 0;
+    justify-content: center;
+}
+li.dws-li
+{
+    list-style: none;
+    padding: 10px;
+}
+li.dws-li a
+{
+    text-decoration: none;
+    font-size: 18px;
+    color: #000;
+}
+li.dws-li a i
+{
+    margin-right: 10px;
+}
+li.dws-li a
+    {
+        position: relative;
+    }
+li.dws-li a::before
+{
+    position: absolute;
+    top: 100%;
+    left: 0;
+}   
+li.dws-li a::after
+{
+    content: '';
+    width: 20px;
+    height: 3px;
+    background-color: #ff2117;
+    position: absolute;
+    top: 100%;
+    right: 0;
+}
+   
+li.dws-li:hover
+{
+    background-color: #e5eae8;
+}
+   
+li.dws-li:hover a:before
+{
+    width: 50%;
+    transform: translateX(100%);
+}
+   
+li.dws-li:hover a:after
+{
+    width: 50%;
+    transform: translateX(-100%);
+}
+   
+li.dws-li a::before{
+    transition: .5s;
+    mix-blend-mode: multiply;
+   }
+   li.dws-li a::after{
+    transition: .5s;
+    mix-blend-mode: multiply;
+   }
+   
+li.dws-li a:hover{
+    color: #e62117;
+   }
+   
+li.dws-li a{
+    padding: 5px;
+   }
+   li.dws-li a::before{
+    top: 90%;
+   }
+   li.dws-li a::after{
+    top: 90%;
+   }
+p,h1,h2,h3,h4,h5,h6{
+    color:white;
+}
+h1{
+    text-align: center;
+    text-transform: capitalize;
+}
+p{
+    letter-spacing:0px;/*межсимвольное расстояние*/
+    text-align: left; /*выравнивание текста*/
+    word-spacing: 2px;/*расстояние между словами*/
+    white-space: normal;/*пробелы и переносы строки*/
+    vertical-align: baseline; /*вертикальное выравнивание*/
+    text-transform: none; /*трансформация текста*/
+    text-indent: 20px; /*отступ 1 строки*/
+    text-decoration: none; /*оформление текста*/
+}
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+  }
