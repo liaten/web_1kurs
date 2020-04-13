@@ -107,6 +107,7 @@ p{
     text-transform: none; /*трансформация текста*/
     text-indent: 20px; /*отступ 1 строки*/
     text-decoration: none; /*оформление текста*/
+    font-size: 20px;
 }
 .center {
     display: block;
